@@ -20,7 +20,7 @@ test('Scenario 1: Register User', async ({ homePage, signupPage, accountPage, pa
   // Step 8: Verify 'ENTER ACCOUNT INFORMATION'
   await expect(page.locator('text=Enter Account Information')).toBeVisible();
 
-  // Step 9-11: Fill details, checkboxes
+  // Step 9-11: Fill details and check checkboxes
   await signupPage.fillAccountInfo(user);
 
   // Step 12: Fill address

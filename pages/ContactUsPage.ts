@@ -4,7 +4,7 @@ export class ContactUsPage {
   constructor(public page: Page) {}
 
   async verifyGetInTouchVisible() {
-    await this.page.waitForTimeout(200); // chống race condition
+    await this.page.waitForTimeout(200); // prevent race condition
     await expect(this.page.locator('h2:has-text("Get In Touch")')).toBeVisible();
   }
 
@@ -24,7 +24,7 @@ export class ContactUsPage {
   }
 
   async verifySuccessMessage() {
-    // Kiểm tra đúng selector message thành công thực tế
+    // Verify the actual success message selector
     const msg = this.page.locator('div.status.alert.alert-success');
     await expect(msg).toBeVisible({ timeout: 10000 });
     await expect(msg).toContainText('Success! Your details have been submitted successfully.');

@@ -20,20 +20,20 @@ test('Scenario 3: Contact Us Form', async ({ homePage, contactUsPage, page }) =>
   // Step 7: Upload file
   await contactUsPage.uploadFile(fileToUpload);
 
-  // Step 8: Click 'Submit' và chờ alert xuất hiện, accept alert
+  // Step 8: Click 'Submit' and wait for alert to appear, accept alert
   page.once('dialog', async dialog => {
     console.log('Dialog message:', dialog.message());
     await dialog.accept(); // ✅ Click OK
   });
   await contactUsPage.submit();
 
-  // Đợi alert xử lý xong
+  // Wait for alert to be handled
   await page.waitForTimeout(5000);
 
   // Step 9: Verify success message
   await contactUsPage.verifySuccessMessage();
 
-  // Step 10: Click 'Home' và xác thực về home page
+  // Step 10: Click 'Home' and verify returning to home page
   await homePage.clickHome();
   await homePage.isVisible();
 });

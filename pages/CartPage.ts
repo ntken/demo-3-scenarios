@@ -10,10 +10,10 @@ export class CartPage {
   }
 
   async verifyPricesAndQuantity() {
-    // Lấy tất cả các hàng sản phẩm trong cart
+    // Get all product rows in the cart
     const rows = await this.page.locator('tr.cart_product').all();
     for (const row of rows) {
-      // Kiểm tra giá, số lượng, tổng tiền từng sản phẩm
+      // Verify price, quantity, and total for each product
       await expect(row.locator('.cart_price')).toBeVisible();
       await expect(row.locator('.cart_quantity')).toBeVisible();
       await expect(row.locator('.cart_total_price')).toBeVisible();
