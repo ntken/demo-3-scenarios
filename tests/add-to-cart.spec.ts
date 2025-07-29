@@ -9,7 +9,7 @@ test('Scenario 2: Add Products in Cart', async ({ homePage, productsPage, cartPa
   // Step 4: Click 'Products'
   await homePage.clickProducts();
 
-  // Scroll đến brand Kookie Kids để đảm bảo các sản phẩm phía dưới xuất hiện
+  // Scroll to Kookie Kids brand to ensure products below are visible
   await productsPage.scrollToBrandKookieKids();
 
   // Step 5: Hover first product (Blue Top), add to cart
