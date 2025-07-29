@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Test User",
+    "email": "testuser1@mail.com",
+    "password": "Test@123",
+    "firstName": "Test",
+    "lastName": "User",
+    "company": "TestCompany",
+    "address": "123 Test St",
+    "address2": "Apt 1",
+    "country": "Canada",
+    "state": "ON",
+    "city": "Toronto",
+    "zipcode": "M1M1M1",
+    "mobile": "1234567890",
+    "day": "1",
+    "month": "1",
+    "year": "2000"
+  }
+]

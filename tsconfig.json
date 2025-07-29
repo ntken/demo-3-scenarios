@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["**/*.ts"]
+}

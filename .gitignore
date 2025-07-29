@@ -1,0 +1,25 @@
+# Node
+node_modules/
+
+# Playwright reports
+playwright-report/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+
+# VSCode
+.vscode/
+
+# Output
+*.tsbuildinfo
+
+# Others
+*.local
+.idea/
